@@ -9,13 +9,13 @@ public class Solution {
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
         Float a = obj.nextFloat();
-        int b = obj.nextInt();
-        int c = obj.nextInt();
-        int d = obj.nextInt();
+        int s = obj.nextInt();
+        int t = obj.nextInt();
+        int u = obj.nextInt();
         int floor =(int)Math.floor(a);
         int ceil =(int)Math.ceil(a);
-        int sqrt =(int)Math.sqrt(b);
-        int pow =(int)Math.pow(c,d);
+        int sqrt =(int)Math.sqrt(s);
+        int pow =(int)Math.pow(t,u);
         System.out.println(floor);
         System. out.println(ceil);
         System.out.println(sqrt);
