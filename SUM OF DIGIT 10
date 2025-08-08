@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int x = obj.nextInt();
+        int y = x;
+        int z = 0;
+       
+        if( x > 99)
+        {
+            while( y > 0)
+            {
+                int digit = y % 10;
+                z+= digit;
+                y = y / 10;
+               
+            }
+           
+            System.out.println("Sum of digit is " +z);
+     
+        }
+        else
+        {
+            System.out.println("Invalid Input");
+        }    
+    }
+} 
