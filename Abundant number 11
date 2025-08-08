@@ -7,10 +7,15 @@ import java.util.regex.*;
 public class Solution {
 
     public static void main(String[] args) {
+
         Scanner obj = new Scanner(System.in);
+
         int x = obj.nextInt();
+
         int number = x;
+
         int sum = 0;
+
         for (int i=1; i < x; i++) {
             if (x % i == 0) { 
                 sum += i;
