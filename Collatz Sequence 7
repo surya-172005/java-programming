@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int x = obj.nextInt();
+        System.out.println(x);
+        int count = 0;
+        while(x != 1)
+        {
+            if(x % 2 == 0)
+            {
+                x = x/ 2;
+            }
+            else
+            {
+                x = 3 * x + 1;
+            }
+            System.out.println(x);
+            count++;
+        }
+        System.out.println("count:" + count);
+    }
+}
