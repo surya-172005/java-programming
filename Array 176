@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int[] doors = new int[n];
+
+        for (int x = 0; x < n; x++)
+        {
+            doors[x] = sc.nextInt();
+        }
+
+       
+        int target = sc.nextInt();
+        int index = -1;
+        
+        for (int x = 0; x < n; x++) 
+        {
+            if (doors[x] == target) 
+            {
+                index = x;
+                break;
+            }
+        }
+
+       
+        if (index != -1) 
+        {
+            System.out.printf("Door Number is %03d-DN%n", index);
+        } 
+        else 
+        {
+            System.out.println("-1");
+        }
+    }
+}
