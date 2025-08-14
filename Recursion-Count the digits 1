@@ -1,0 +1,18 @@
+import java.util.*;
+public class Solution {  
+    static int countDigits(int num) {
+        num = Math.abs(num);  
+        if (num < 10) 
+        {
+            return 1; 
+        }
+        return 1 + countDigits(num / 10); 
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);   
+        int num = sc.nextInt();
+        int count = countDigits(num);
+        System.out.println("The Count the digits: " + count);
+    }
+}
