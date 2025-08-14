@@ -1,0 +1,26 @@
+import java.util.*;
+public class Solution {
+    static int sumUpToN(int n) {
+        if (n == 1)
+        {
+            return 1; 
+        }
+        return n + sumUpToN(n - 1);
+    }
+    public static void main(String[] args)                        
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        if (n >= 1 && n <= 50) 
+        {
+            int sum = sumUpToN(n);    
+            System.out.printf("The sum of numbers from 1 to %d : %04d", n, sum);
+        } 
+        else
+        {
+            System.out.println("Enter a Valid Input!!!!!!!!!!!!!!!!!!");
+        }
+    }
+}
+  
